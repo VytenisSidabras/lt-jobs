@@ -1,0 +1,28 @@
+{
+	"[javascript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "stylelint.vscode-stylelint"
+	},
+	"eslint.validate": [
+		"html",
+		"javascript"
+	],
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"stylelint.validate": [
+		"svelte",
+		"scss"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+	}
+}
