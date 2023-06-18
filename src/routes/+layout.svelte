@@ -14,19 +14,19 @@
   <Header />
   <main>
     <slot />
+    <footer>
+      <p>
+        By
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/vytenis-sidabras/"
+        >
+          Vytenis
+        </a>
+      </p>
+    </footer>
   </main>
-  <footer>
-    <p>
-      By
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/vytenis-sidabras/"
-      >
-        Vytenis
-      </a>
-    </p>
-  </footer>
 </div>
 
 <style>
@@ -41,7 +41,10 @@
 
   main {
     flex: 1;
-    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   footer {
